@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    
+    <style>
+        #map {
+            height: 180px;
+        }
+
+        .markers_info_style {
+            font-weight: 700;
+        }
+
+        .marker_infos, .marker_infos_1 {
+            margin-bottom: 20px;
+        }
+
+        .marker_infos_1 {
+            margin-top: 20px;
+        }
+
+        .marker_localities {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Map of US</h1>
+    <div id="map"></div>
+    <div id="markers_info" class="markers_info_style">
+        <div id="marker_1" class="marker_infos_1">
+            Marker 1: <span id="marker_1_coordinates"></span><br>
+            <p class = "marker_localities">Locality: <span id="marker_1_locality"></span></p>
+        </div>
+        <div id="marker_2" class="marker_infos">
+            Marker 2: <span id="marker_2_coordinates"></span><br>
+            <p class = "marker_localities">Locality: <span id="marker_2_locality"></span></p>
+        </div>
+        <div id="marker_3" class="marker_infos">
+            Marker 3: <span id="marker_3_coordinates"></span><br>
+            <p class = "marker_localities">Locality: <span id="marker_3_locality"></span></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
