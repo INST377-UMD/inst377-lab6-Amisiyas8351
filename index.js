@@ -10,7 +10,7 @@ for (let i = 0; i < 3; i++) {
     coordinates.push({ lat: latitude, lng: longitude });
 }
 
-const map = L.map('map').setView([32.5, -95], 5); // Adjust the view to show all points
+const map = L.map('map').setView([32.5, -95], 5);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
